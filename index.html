@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        position: fixed;
+        font-size: 1rem;
+        text-align: center;
+        color: white;
+      }
+      .attribution a {
+        color: white;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor
+      </a>
+      . Coded by
+      <a href="https://github.com/bytebanana/faq-accordion-card-main">
+        Bytebanana
+      </a>
+      .
+    </div>
+    <main>
+      <div class="card">
+        <div class="card-thumbnail-holder">
+          <img
+            class="thumbnail"
+            src="images/illustration-woman-online-mobile.svg"
+            alt=""
+          />
+          <img
+            class="thumbnail-shadow"
+            src="images/bg-pattern-mobile.svg"
+            alt=""
+          />
+        </div>
+        <div class="card-title">
+          <h1>FAQ</h1>
+        </div>
+        <div class="card-body">
+          <ul class="faq-list">
+            <li class="faq-item">
+              <a class="question">
+                How many team members can I invite?
+                <span>
+                  <img class="arrow" src="images/icon-arrow-down.svg" alt="" />
+                </span>
+              </a>
+              <p class="answer">
+                You can invite up to 2 additional users on the Free plan. There
+                is no limit on team members for the Premium plan.
+              </p>
+            </li>
+            <li class="faq-item">
+              <a class="question">
+                What is the maximum file upload size?
+                <span>
+                  <img class="arrow" src="images/icon-arrow-down.svg" alt="" />
+                </span>
+              </a>
+              <p class="answer">
+                No more than 2GB. All files in your account must fit your
+                allotted storage space.
+              </p>
+            </li>
+            <li class="faq-item">
+              <a class="question">
+                How do I reset my password?
+                <span>
+                  <img class="arrow" src="images/icon-arrow-down.svg" alt="" />
+                </span>
+              </a>
+              <p class="answer">
+                Click “Forgot password” from the login page or “Change password”
+                from your profile page. A reset link will be emailed to you.
+              </p>
+            </li>
+            <li class="faq-item">
+              <a class="question">
+                Can I cancel my subscription?
+                <span>
+                  <img class="arrow" src="images/icon-arrow-down.svg" alt="" />
+                </span>
+              </a>
+              <p class="answer">
+                Yes! Send us a message and we’ll process your request no
+                questions asked.
+              </p>
+            </li>
+            <li class="faq-item">
+              <a class="question">
+                Do you provide additional support?
+                <span>
+                  <img class="arrow" src="images/icon-arrow-down.svg" alt="" />
+                </span>
+              </a>
+              <p class="answer">
+                Chat and email support is available 24/7. Phone lines are open
+                during normal business hours.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <script src="app.js" type="text/javascript"></script>
+  </body>
+</html>

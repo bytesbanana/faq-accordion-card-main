@@ -1,0 +1,126 @@
+/* 
+- Mobile: 375px
+- Desktop: 1440px
+ */
+:root {
+  /* Layout */
+  --mobile-bp: 375px;
+  --desktop-bp: 1440px;
+  /* Color */
+
+  /* ### Primary */
+  --text-very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --text-soft-red: hsl(14, 88%, 65%);
+  --bg-gred-soft-violet: hsl(273, 75%, 66%);
+  --bg-gred-soft-blue: hsl(240, 73%, 65%);
+
+  /* ### Neutral */
+
+  --text-very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --text-dark-grayish-blue: hsl(240, 6%, 50%);
+  --divider-light-grayish-blue: hsl(240, 5%, 91%);
+
+  /* Typography */
+  --base-font-size: 12px;
+  --base-font-family: "Kumbh Sans", sans-serif;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: var(--base-font-size);
+  font-family: var(--base-font-family);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  min-height: 120vh;
+  background: linear-gradient(
+    180deg,
+    var(--bg-gred-soft-violet) 50%,
+    var(--bg-gred-soft-blue) 100%
+  );
+}
+
+.card {
+  margin: 10rem 0;
+  width: 325px;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 4rem 1rem;
+  box-shadow: 0px 30px 28px -16px rgb(0 0 0 / 50%);
+}
+
+.card-thumbnail-holder {
+  margin-top: -170px;
+  margin-left: -35px;
+}
+
+.thumbnail-shadow {
+  margin-top: -100px;
+  margin-left: 30px;
+}
+
+.card-title {
+  padding: 1.5rem;
+}
+
+.faq-list {
+  list-style: none;
+}
+
+.faq-item {
+  color: var(--text-dark-grayish-blue);
+  border-bottom: 1px solid var(--divider-light-grayish-blue);
+  text-align: start;
+  padding: 20px 0px;
+}
+
+.faq-item .question {
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+
+.faq-item .question .arrow {
+  transform: rotate(360deg);
+}
+
+.faq-item .question {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.faq-item .question .arrow {
+  transform: rotate(360deg);
+  transition: all 0.5s ease;
+}
+.faq-item.active .question .arrow {
+  transform: rotate(180deg);
+  transition: all 0.5s ease;
+}
+
+.faq-item.active .question {
+  color: var(--text-very-dark-desaturated-blue);
+  font-weight: 700;
+}
+
+.faq-item .answer {
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.2rem;
+  word-break: break-word;
+  padding-top: 10px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
