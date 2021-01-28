@@ -72,15 +72,24 @@ main {
 .thumbnail-img-holder {
   position: absolute;
 }
-.thumbnail,
+.thumbnail-box {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  margin-left: auto;
+  left: 100px;
+  top: 300px;
+  z-index: 3;
+}
+/* .thumbnail,
 .thumbnail-shadow {
   width: 100%;
-  min-width: 244px;
-  min-height: 104px;
-}
+  min-width: 468px;
+  min-height: 200px; */
+/* } */
 
 .thumbnail {
-  margin-left: -50px;
+  margin-left: -20%;
   z-index: 1;
 }
 
@@ -169,7 +178,12 @@ main {
     margin-left: -35px;
   }
 
+  .thumbnail-box {
+    display: none;
+  }
   .thumbnail {
+    width: 100%;
+    height: auto;
     margin-left: 0px;
   }
   .thumbnail-shadow {
